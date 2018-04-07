@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function mychecker()
+{
+	if(document.getElementById("demo").innerHTML=" ")
+	{
+		alert("please enter the correct field");
+	}
+}
+</script>
+</head>
+<body>
+<form action="" method="post">
+<table border="2" cellspacing="0px" cellpadding="2px">
+<tr>
+<th>Name</th>
+<td id="demo"><input type="text" name="name" placeholder="Name"/></td>
+</tr>
+<tr>
+<th>Email</th>
+<td><input type="email" name="email" placeholder="Email"/></td>
+</tr>
+<tr>
+<th>Zip code</th>
+<td><input type="number" name="zipcode" max="5" placeholder="Zip code"/></td>
+</tr>
+<tr>
+<th>Country</th>
+<td><select name="country">
+<option>country</option>
+<option value="India">India</option>
+<option value="Australia">Australia</option>
+<option value="Bangladesh">Bangladesh</option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<center><Button type="button" name="mybutton" onclick="mychecker()">submit</Button></center>
+</td></tr>
+</table>
+</form>
+</body>
+</html>
